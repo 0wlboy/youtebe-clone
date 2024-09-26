@@ -12,7 +12,7 @@ header > nav >div{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 header > nav > .derecha{
@@ -58,6 +58,38 @@ centro
 
 .centro{
   display: none;
+}
+
+.centro >div{
+  align-items: center;
+}
+
+#barra {
+  background:none;
+  border: 0.1px solid rgb(148, 148, 148);
+  padding: 8px 0;
+  border-radius: 20px 0 0 20px;
+}
+
+#barra::placeholder{
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.boton > button {
+  border: 0.1px solid rgb(148, 148, 148);
+  padding: 4px 10px;
+  border-radius: 0 20px 20px 0;
+}
+
+.micro-container{
+  margin-left: 10px;
+}
+
+.micro-container > button{
+  background-color: #ededed;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 /*derecha*/
@@ -107,6 +139,14 @@ centro
   /* Estilos para pantallas grandes (desktops) */
   @media (min-width: 992px) {
     /* Ajustes para pantallas grandes */
+
+    .barra-container{
+      flex: 0 1 732px;
+    }
+
+    #barra{ 
+      width: 100%;
+    }
   
   }
 
