@@ -15,6 +15,10 @@ header > nav >div{
     gap: 20px;
 }
 
+header > nav > .derecha{
+ justify-content: flex-start;
+}
+
 .icono{
     width: 25px;
 }
@@ -22,13 +26,27 @@ header > nav >div{
 /*
 izquierda
 */
+
+header > nav > .izquierda{
+  justify-content: flex-end;
+ }
+
 .izquierda > div {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
 }
 
+.youtube-container{
+  gap: 5px;
+}
+/*
+centro
+*/
+
+.centro{
+  display: none;
+}
 
 /*derecha*/
 
@@ -57,30 +75,24 @@ izquierda
   /* Estilos para pantallas pequeñas (móviles) */
 @media (min-width: 600px) {
     /* Ajustes para pantallas pequeñas */
-    
+    .responsive-icon{
+      display: none;
+    } 
+
+    .centro{
+      display: flex;
+      gap: 0;
+    }
+    .centro > .barra-container, .boton-container{
+      flex:1;
+    } 
   }
 
   /* Estilos para pantallas medianas (tablets) */
   @media (min-width: 768px) {
-    /* Ajustes para pantallas medianas */
-    /*.centro > .container-bar > input {
-        border: 1px solid black;
-        border-radius: 25px 0 0 25px;
-        padding-left: 10px;
-        display: flex;
-    }
+    
 
-    .centro > .container-bar > button {
-        border: 1px solid black;
-        border-radius: 0 25px 25px 0;
-        padding: 2px 5px;
-    }
-
-    #microfono {
-        border: 2px solid blue ;
-        border-radius: 25px;
-        padding: 5px;
-    }*/
+    
   }
   
   
