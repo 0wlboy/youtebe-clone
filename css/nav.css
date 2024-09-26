@@ -20,7 +20,12 @@ header > nav > .derecha{
 }
 
 .icono{
-    width: 25px;
+    width: 20px;
+}
+
+button{
+  background: none;
+  border: none;
 }
 
 /*
@@ -37,6 +42,13 @@ header > nav > .izquierda{
     justify-content: center;
 }
 
+.izquierda > .youtube-container >p {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
 .youtube-container{
   gap: 5px;
 }
@@ -49,10 +61,6 @@ centro
 }
 
 /*derecha*/
-
-.derecha > .icon-container {
-    
-}
 
 .derecha >button{
     background: none;
@@ -83,8 +91,8 @@ centro
       display: flex;
       gap: 0;
     }
-    .centro > .barra-container, .boton-container{
-      flex:1;
+    .centro > div{
+      display: flex;
     } 
   }
 
