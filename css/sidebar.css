@@ -1,0 +1,53 @@
+.sidebar {
+    display: none;
+    text-align: center;
+    width: 30%;
+}
+
+.sidebar > ul > li {
+    margin: 25px 0;
+    align-items: center;
+}
+
+.sidebar > ul > li > p {
+    font-size: 10px;
+}
+
+.sidebar > ul > li:hover {
+    cursor: pointer;
+}
+
+/*responsive*/
+
+/* Estilos para pantallas extra-pequeñas (móviles) */
+@media (max-width: 600px) {
+    /* Ajustes para pantallas pequeñas */
+  }
+
+  /* Estilos para pantallas pequeñas (móviles) */
+@media (min-width: 600px) {
+    /* Ajustes para pantallas pequeñas */
+   
+  }
+
+  /* Estilos para pantallas medianas (tablets) */
+  @media (min-width: 768px) {
+    .sidebar{
+        display: flex;
+    }
+    
+  }
+  
+  
+  /* Estilos para pantallas grandes (desktops) */
+  @media (min-width: 992px) {
+    /* Ajustes para pantallas grandes */
+
+  
+  }
+
+  /* Estilos para pantallas extra-grandes (desktops) */
+  @media (min-width: 1200px) {
+    /* Ajustes para pantallas grandes */
+  
+  }

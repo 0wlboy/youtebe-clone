@@ -1,11 +1,31 @@
 *{
     padding: 0;
     margin: 0;
-
+    list-style: none;
       
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 body{
     padding: 5px 15px;
     background-color: #f6f6f6;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+svg{
+    width: 25px;
+    height: 25px;
 }
