@@ -1,6 +1,6 @@
 .main-container{
-    width: auto;
     display: flex;
+    flex-direction: column;
 }
 
 .categorias {
@@ -12,11 +12,7 @@
 }
 
 .categorias > p {
-    width: 100%;
-    height: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  justify-content: right;
     align-items: center;
     text-align: center;
     padding:0;
