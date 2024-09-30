@@ -1,36 +1,24 @@
-.main-container{
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
+.categorias{
+  overflow-x: scroll;
+  display: flex;
+  padding-left:10px ;
 }
 
-.categorias {
-    overflow: auto;
-    white-space: nowrap;
-    display: flex;
-    gap: 10px;
-    justify-content: start;
-    margin-top: 10px;
-    
+
+
+.categoria{
+  margin: 12px 6px;
+  background-color: #fcfcfc;
+  padding: 6px 12px;
+  border: 1px solid rgba(56, 56, 56, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
+  white-space: nowrap;
 }
 
-.categorias > p {
-    align-items: center;
-    text-align: center;
-    display: inline-block;
-    /*overflow: hidden;*/
-    padding:0;
-    font-size: 12px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(239, 239, 239);
-
-}
-
-.categorias > p:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    
+.categoria:hover{
+  background-color: #ededed;
 }
 
 

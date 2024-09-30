@@ -1,11 +1,46 @@
-main{
-    display: grid;
-    grid-template-columns: 100%;
-    
+.main-body{
+    display: flex;
+    position: fixed;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    top: 60px;
+    width: 100%;
 }
 
-@media screen and (min-width: 768px){
-    main{
-        grid-template-columns: 4% 96%;
-    }
+main{
+    width: 100%;
 }
+
+/*responsive*/
+
+/* Estilos para pantallas extra-pequeñas (móviles) */
+@media (max-width: 600px) {
+    /* Ajustes para pantallas pequeñas */
+  }
+
+  /* Estilos para pantallas pequeñas (móviles) */
+@media (min-width: 600px) {
+    /* Ajustes para pantallas pequeñas */
+   
+  }
+
+  /* Estilos para pantallas medianas (tablets) */
+  @media (min-width: 768px) {
+    main{
+        width: calc(100vw - 60px);
+    }
+  }
+  
+  
+  /* Estilos para pantallas grandes (desktops) */
+  @media (min-width: 992px) {
+    /* Ajustes para pantallas grandes */
+
+  
+  }
+
+  /* Estilos para pantallas extra-grandes (desktops) */
+  @media (min-width: 1200px) {
+    /* Ajustes para pantallas grandes */
+  
+  }

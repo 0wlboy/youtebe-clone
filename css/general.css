@@ -2,52 +2,37 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
       
 }
 
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+.icon{
+  color: black;
 }
 
-
-/*scroll bar*/
-/* Works on Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: black;
-  }
-  
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: black;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    border: 3px solid;
-  }
-
-body{
-    padding: 5px 15px;
-    background-color: #f6f6f6;
+h1{
+  font-size: 1.2rem;
 }
 
-p{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+h4{
+  font-size: .9rem;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-left: 20px;}
+  
+i{
+    font-size: 1.2rem;
+    color: white;
 }
 
-svg{
-    width: 25px;
-    height: 25px;
+p,a{
+    font-size: .9rem;
+    text-decoration: none;
+    color: black;
+}
+
+hr{
+    border:1px solid rgba(255, 255, 255,0.1);
+    margin: 12px 0;
 }

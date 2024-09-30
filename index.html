@@ -9,102 +9,169 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+
+        <link rel="stylesheet" href="./css/remixicon.css">
         <link rel="stylesheet" href="./css/general.css">
         <link rel="stylesheet" href="./css/nav.css">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/sidebar.css">
-        <link rel="stylesheet" href="./css/main-container.css">
+        <link rel="stylesheet" href="./css/categorias.css">
+        <link rel="stylesheet" href="./main-gallery.css">
         <title>Youtube</title>
     </head>
     <body>
         <header>
-            <nav>
                 <div class="izquierda">
-                    <div class="menu-container">
-                        <img src="./iconos/menu.png" alt="" class="icono" id="menu">
-                    </div>
-                    <div class="youtube-container">
-                        <img src="./iconos/youtube.png" alt="" class="icono" id="youtube">
-                        <p>Youtube</p>
+                    <i class="ri-menu-line icon"></i>
+                    <div class="logo">
+                        <div class="logo-img">
+                            <img src="./iconos/youtube.png" alt="">
+                        </div>
+                        <h1 id="text-logo">Youtube</h1>
                     </div>
                 </div>
-
                 <div class="centro">
-                    <div class="search-container">
-                        <div class="barra-container">
-                            <input placeholder="Buscar" type="text" name="" id="barra">
-                        </div>
-                        <div class="boton">
-                            <button>
-                                <img src="./iconos/lupa.png" alt="" class="icono" id="lupa">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="micro-container">
-                        <button>
-                            <img src="./iconos/forma-de-microfono-negro.png" alt="" class="icono" id="microfono">
-                        </button>
-                    </div>
-                    
+                    <form action="">
+                        <input type="text" placeholder="buscar">
+                    </form>
+                    <button class="buscar"><i class="ri-search-line icon"></i></button>
+                    <button class="mic"><i class=" ri-mic-line icon"></i></button>
                 </div>
                 <div class="derecha">
-                        <button><img src="./iconos/lupa.png" alt="" class="icono responsive-icon" id="lupa-responsive"></button>
-                        <button><img src="./iconos/forma-de-microfono-negro.png" alt="" class="icono responsive-icon" id="microfono-responsive"></button>
-                        <button><img src="./iconos/camara-de-video.png" alt="" class="icono" id="camara"></button>
-                        <button><img src="./iconos/campana.png" alt="" class="icono" id="campana"></button>
-                        <button><img src="./iconos/nueva-cuenta.png" alt="" class="icono" id="cuenta"></button>
+                    <i class="ri-search-line icon responsive"></i>
+                    <i class="ri-mic-line icon icon responsive"></i>
+                    <i class="ri-video-add-line icon"></i>
+                    <i class="ri-notification-2-line icon"></i>
+                    <div class="profile-box">
+                        <img src="./iconos/profile.png" alt="">
+                    </div>
                 </div>
-            </nav>
         </header>
 
-        <main>
+        <div class="main-body">
             <aside class="sidebar">
-                <ul>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg"  focusable="false" aria-hidden="true"   ><g>
-                            <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
-                            <p>Principal</p>
-                    </li>
-                    <li>
-                    <svg xmlns="http://www.w3.org/2000/svg"  focusable="false" aria-hidden="true"  >
-                        <path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path>
-                    </svg>
-                    <p>Shorts</p>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg"  focusable="false" aria-hidden="true"  >
-                            <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
-                            <p>Suscripciones</p>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"  >
-                            <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
-                            <p>Tu</p>
-                    </li>
-                </ul>
-                
-            </aside>
-            <section class="main-container">
-                <nav class="categorias">
-                    <p>Todos</p>
-                    <p>Musica</p>
-                    <p>Videojuegos</p>
-                    <p>Lista de reproducccion</p>
-                    <p>Musica de Videojuegos</p>
-                    <p>Trailer</p>
-                    <p>Juegos de estaregia por turnos</p>
-                    <p>Musica ambient</p>
-                    <p>Juegos de rol</p>
-                    <p>Subidos recientemente</p>
-                    <p>Video Ensayos</p>
-                    <p>Novedades para ti</p>
+                <nav class="sidebar-items">
+                    <a href="#" class="sidebar-item"><i class="ri-home-2-fill icon"></i>Principal</a>
+                    <a href="#" class="sidebar-item"><i class="ri-video-on-fill icon"></i>Shorts</a>
+                    <a href="#" class="sidebar-item"><i class="ri-tv-2-fill icon"></i>Suscripciones</a>
+                    <a href="#" class="sidebar-item"><i class="ri-movie-fill icon"></i>Tu</a>
                 </nav>
-                <section class="main-content"> 
-
-                </section> 
-            </section>
-        </main>
-
+            </aside>
+            <main>
+                <div class="categorias">
+                    <div class="categoria">
+                        <p>Todo</p>
+                    </div>
+                    <div class="categoria">
+                        <p>Videojuegos</p>
+                    </div>
+                    <div class="categoria">
+                        <p>Musica</p>
+                    </div>
+                    <div class="categoria">
+                        <p>Musica de videojugos</p>
+                    </div>
+                    <div class="categoria">
+                        <p>Juegos de estrategia</p>
+                    </div>
+                    <div class="categoria">
+                        <p>Trailers</p>
+                    </div>
+                    <div class="categoria">
+                        <p>En vivo</p>
+                    </div>
+                    <div class="categoria">
+                        <p>En tiempo real</p>
+                    </div>
+                    <div class="categoria">
+                        <p>Piano y jazz</p>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="video-content-container">
+                        <div class="video-content">
+                            <a href="" class="video-box">
+                                <img src="https://i.ytimg.com/vi/NpOxjlDoszQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAm-RmFJNVmAPq5fkbkqhBfA3KOGA" alt="">
+                            </a>
+                            <div class="video-details">
+                                <div class="channel-logo">
+                                    <img src="https://yt3.ggpht.com/IA_4L2UMyulyEK7fFesRFF-wtcUP3nCvEMvtpFM3L8K0-6Skglv3oP5soNTzaLvIwP6vrvBfkQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="titulo">Titulo</h3>
+                                    <div class="channel-name">Canal</div>
+                                    <div class="views-upload">
+                                        <div class="views">28K views</div>
+                                        <div class="upload">1 year ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-content-container">
+                        <div class="video-content">
+                            <a href="" class="video-box">
+                                <img src="https://i.ytimg.com/vi/NpOxjlDoszQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAm-RmFJNVmAPq5fkbkqhBfA3KOGA" alt="">
+                            </a>
+                            <div class="video-details">
+                                <div class="channel-logo">
+                                    <img src="https://yt3.ggpht.com/IA_4L2UMyulyEK7fFesRFF-wtcUP3nCvEMvtpFM3L8K0-6Skglv3oP5soNTzaLvIwP6vrvBfkQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="titulo">Titulo</h3>
+                                    <div class="channel-name">Canal</div>
+                                    <div class="views-upload">
+                                        <div class="views">28K views</div>
+                                        <div class="upload">1 year ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-content-container">
+                        <div class="video-content">
+                            <a href="" class="video-box">
+                                <img src="https://i.ytimg.com/vi/NpOxjlDoszQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAm-RmFJNVmAPq5fkbkqhBfA3KOGA" alt="">
+                            </a>
+                            <div class="video-details">
+                                <div class="channel-logo">
+                                    <img src="https://yt3.ggpht.com/IA_4L2UMyulyEK7fFesRFF-wtcUP3nCvEMvtpFM3L8K0-6Skglv3oP5soNTzaLvIwP6vrvBfkQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="titulo">Titulo</h3>
+                                    <div class="channel-name">Canal</div>
+                                    <div class="views-upload">
+                                        <div class="views">28K views</div>
+                                        <div class="upload">1 year ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-content-container">
+                        <div class="video-content">
+                            <a href="" class="video-box">
+                                <img src="https://i.ytimg.com/vi/NpOxjlDoszQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAm-RmFJNVmAPq5fkbkqhBfA3KOGA" alt="">
+                            </a>
+                            <div class="video-details">
+                                <div class="channel-logo">
+                                    <img src="https://yt3.ggpht.com/IA_4L2UMyulyEK7fFesRFF-wtcUP3nCvEMvtpFM3L8K0-6Skglv3oP5soNTzaLvIwP6vrvBfkQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="detail">
+                                    <h3 class="titulo">Titulo</h3>
+                                    <div class="channel-name">Canal</div>
+                                    <div class="views-upload">
+                                        <div class="views">28K views</div>
+                                        <div class="upload">1 year ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
