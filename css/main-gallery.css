@@ -1,6 +1,6 @@
 .gallery{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 18px;
     padding: 20px 25px;
     overflow-y: scroll;
@@ -27,6 +27,7 @@
 
 .video-box > img{
     border-radius: 10px;
+    height:fit-content;
 }
 
 
@@ -41,6 +42,9 @@
 .video-details{
     display: flex;
     padding-top: 12px;
+}
+.video-details > i{
+    float: right;
 }
 
 .detail{
